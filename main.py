@@ -29,7 +29,6 @@ def is_known():
     words.remove(current_card)
     data = pd.DataFrame(words)
     data.to_csv("data/words_to_learn.csv", index=False)
-    print(len(words))
     change_flashcard()
 
 
